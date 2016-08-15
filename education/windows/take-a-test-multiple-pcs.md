@@ -140,9 +140,9 @@ To set up a test account using Group Policy, first create a Powershell script th
 #### Create a Powershell script
 
 This sample Powershell script configures the test account and the test URL. Edit the sample to: 
-- Use your test account for **$obj.LaunchURI**  
-- Use your test URL for **$obj.TesterAccount**
-- Use your test account for **-UserName** 
+- Use your test URL for **$obj.LaunchURI**  
+- Use your test account for **$obj.TesterAccount**
+- Use your test user name for **-UserName** 
 
 ```
 $obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'"; 
